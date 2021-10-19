@@ -14,6 +14,9 @@
           <div>
             {{ $t('copyright') }}
           </div>
+          <div>
+            {{ $t('deployed') }} <a href="https://github.com/" style="color: white !important;">GitHub</a>
+          </div>
           <div class="inline text-subtitle2">
             <span class="langOpt" @click="changeLocale('en-US')">English</span> | <span class="langOpt" @click="changeLocale('zh-CN')">中文</span>
           </div>

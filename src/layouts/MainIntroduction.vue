@@ -8,6 +8,10 @@
     <sub-obj name="links">
       <indented-line v-for="link in links" :key="link.title"><indentation /><string-wrapper><a :href="link.link" @click="onLinkClick(link)">{{ $t(link.title) }}</a></string-wrapper></indented-line>
     </sub-obj>
+    <sub-obj name="contacts">
+      <indented-line><indentation />QQ: <string-wrapper>1364109425</string-wrapper></indented-line>
+      <indented-line><indentation />Mobile: <string-wrapper>+86 18998490182</string-wrapper></indented-line>
+    </sub-obj>
     <sub-obj name="identities" v-if="expanded">
       <indented-line v-for="identity in 9" :key="identity"><indentation /><string-wrapper>{{ $t('identities.' + identity) }}</string-wrapper></indented-line>
     </sub-obj>
@@ -39,6 +43,7 @@ import Indentation from "components/Indentation";
 import StringWrapper from "components/StringWrapper";
 
 const links = [
+  { title: 'blog', link: 'https://liuxiu233.com' },
   { title: 'github', link: 'https://github.com/LiuXiu233' },
   { title: 'gitee', link: 'https://gitee.com/liuxiu233' },
   { title: 'twitter', link: 'https://twitter.com/Liuxiu233' },

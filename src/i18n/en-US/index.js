@@ -1,4 +1,5 @@
 export default {
+  blog: 'Blog',
   github: 'GitHub',
   gitee: 'Gitee',
   twitter: 'Twitter',
@@ -8,9 +9,10 @@ export default {
   facebook: 'Facebook',
   linkedin: 'LinkedIn',
 
-  profession: 'E-sport Player',
+  profession: 'E-sport Practitioner',
 
   copyright: 'Copyright © 2021 Liu Xiu',
+  deployed: 'This page is deployed to ',
 
   identities: [
     'Senior Instructor, Guangzhou E-sport Profession Education Co., Ltd.', 'Managing Coach, Pub E-sport Club',

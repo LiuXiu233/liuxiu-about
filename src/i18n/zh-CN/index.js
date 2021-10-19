@@ -1,4 +1,5 @@
 export default {
+  blog: '博客',
   github: 'GitHub',
   gitee: '码云',
   twitter: 'Twitter',
@@ -8,9 +9,10 @@ export default {
   facebook: 'Facebook',
   linkedin: '领英',
 
-  profession: '电子竞技选手',
+  profession: '电子竞技从业者',
 
   copyright: '版权所有 © 2021 刘秀',
+  deployed: '本主页运行在 ',
 
   identities: [
     '广州电竞职业教育有限公司高级讲师', 'Pub电子竞技俱乐部经理教练兼全职保姆', '广东省经济贸易学校电竞班战术导师', '广州工商学院电竞专业客座教授',
