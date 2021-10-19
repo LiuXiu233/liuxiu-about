@@ -1,0 +1,58 @@
+<template>
+  <div class="mainBody">
+    <span style="color: #eec08b">let</span> xiu = {<br>
+    <indented-line>name: <string-wrapper>Liu, Xiu</string-wrapper></indented-line>
+    <indented-line>email: <string-wrapper><a href="mailto:i@xiu.buzz">i@xiu.buzz</a></string-wrapper></indented-line>
+    <sub-obj name="links">
+      <indented-line v-for="link in links" :key="link.title"><indentation /><string-wrapper><a :href="link.link">{{ $t(link.title) }}</a></string-wrapper></indented-line>
+    </sub-obj>
+    <sub-obj name="identities" v-if="expanded">
+      <indented-line v-for="identity in 9" :key="identity"><indentation /><string-wrapper>{{ $t('identities.' + identity) }}</string-wrapper></indented-line>
+    </sub-obj>
+    <indented-line v-else>identities: [ <a href="#" @click="expanded = true">...</a> ]</indented-line>
+    };
+  </div>
+</template>
+
+<script>
+import IndentedLine from "components/IndentedLine";
+import SubObj from "components/subObj";
+import Indentation from "components/Indentation";
+import StringWrapper from "components/StringWrapper";
+
+const links = [
+  { title: 'github', link: 'https://github.com/LiuXiu233' },
+  { title: 'gitee', link: 'https://gitee.com/liuxiu233' },
+  { title: 'twitter', link: 'https://twitter.com/Liuxiu233' },
+  { title: 'steam', link: 'https://steamcommunity.com/id/liuxiu233/' },
+  { title: 'weibo', link: 'https://weibo.com/junhunz' },
+  { title: 'wechat', link: 'http://junhunz.cn/wechat.html' },
+  { title: 'facebook', link: 'https://www.facebook.com/profile.php?id=100048228247720' },
+  { title: 'linkedin', link: 'https://www.linkedin.com/in/liuxiu233' },
+];
+
+export default {
+  name: "MainIntroduction",
+  components: { StringWrapper, Indentation, SubObj, IndentedLine },
+
+  setup() {
+    return {
+      links
+    }
+  },
+
+  data() {
+    return {
+      expanded: false,
+    }
+  }
+}
+</script>
+
+<style>
+/*.mainBody :after {
+  content: "|";
+  -webkit-animation: blink 500ms linear infinite alternate;
+  animation: blink 500ms linear infinite alternate;
+}*/
+</style>
