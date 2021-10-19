@@ -13,7 +13,10 @@
       <indented-line><indentation />Mobile: <string-wrapper>+86 18998490182</string-wrapper></indented-line>
     </sub-obj>
     <sub-obj name="identities" v-if="expanded">
-      <indented-line v-for="identity in 9" :key="identity"><indentation /><string-wrapper>{{ $t('identities.' + identity) }}</string-wrapper></indented-line>
+      <sub-actual-obj v-for="identity in 9" :key="identity">
+        <indented-line><indentation />title: <string-wrapper>{{ $t('titles.' + identity) }}</string-wrapper></indented-line>
+        <indented-line><indentation />organization: <string-wrapper>{{ $t('identities.' + identity) }}</string-wrapper></indented-line>
+      </sub-actual-obj>
     </sub-obj>
     <indented-line v-else>identities: [ <a href="#" @click="expanded = true">...</a> ]</indented-line>
     };
@@ -41,6 +44,7 @@ import IndentedLine from "components/IndentedLine";
 import SubObj from "components/subObj";
 import Indentation from "components/Indentation";
 import StringWrapper from "components/StringWrapper";
+import SubActualObj from "components/subActualObj";
 
 const links = [
   { title: 'blog', link: 'https://liuxiu233.com' },
@@ -56,7 +60,7 @@ const links = [
 
 export default {
   name: "MainIntroduction",
-  components: { StringWrapper, Indentation, SubObj, IndentedLine },
+  components: {SubActualObj, StringWrapper, Indentation, SubObj, IndentedLine },
 
   setup() {
     return {

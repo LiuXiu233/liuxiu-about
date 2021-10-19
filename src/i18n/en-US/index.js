@@ -14,11 +14,19 @@ export default {
   copyright: 'Copyright © 2021 Liu Xiu',
   deployed: 'This page is deployed to ',
 
+  titles: [
+    'Senior Instructor', 'Managing Coach',
+    'E-sport Tactical Instructor', 'Visiting Professor for E-sport Major',
+    'General Manager', 'E-sport Instructor',
+    'E-sport Major Manager', 'Project Manager for LOL: Wild Rift',
+    'IT Engineer', 'Member',
+  ],
+
   identities: [
-    'Senior Instructor, Guangzhou E-sport Profession Education Co., Ltd.', 'Managing Coach, Pub E-sport Club',
-    'E-sport Tactical Instructor, Guangdong Institute of Economics and Trade', 'Visiting Professor for E-sport Major, Guangzhou College of Technology and Business',
-    'General Manager, Pub E-sport College', 'E-sport Instructor, Zhengzhou Electron Technology Secondary Specialized School',
-    'E-sport Major Manager, City University of Zhengzhou', 'Project Manager for LOL: Wild Rift, Sichuan Southwest Duokui E-sport',
-    'IT Engineer, Linkube Limited (GB)', 'Member, Fujian Pie Research Association',
+    'Guangzhou E-sport Profession Education Co., Ltd.', 'Pub E-sport Club',
+    'Guangdong Institute of Economics and Trade', 'Guangzhou College of Technology and Business',
+    'Pub E-sport College', 'Zhengzhou Electron Technology Secondary Specialized School',
+    'City University of Zhengzhou', 'Sichuan Southwest Duokui E-sport',
+    'Linkube Limited (GB)', 'Fujian Pie Research Association',
   ]
 }
