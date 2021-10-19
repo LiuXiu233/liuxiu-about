@@ -8,6 +8,8 @@ export default {
   facebook: 'Facebook',
   linkedin: 'LinkedIn',
 
+  profession: 'E-sport Player',
+
   copyright: 'Copyright © 2021 Liu Xiu',
 
   identities: [

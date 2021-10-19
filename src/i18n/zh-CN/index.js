@@ -8,6 +8,8 @@ export default {
   facebook: 'Facebook',
   linkedin: '领英',
 
+  profession: '电子竞技选手',
+
   copyright: '版权所有 © 2021 刘秀',
 
   identities: [
