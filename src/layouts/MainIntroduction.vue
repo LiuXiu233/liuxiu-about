@@ -4,13 +4,29 @@
     <indented-line>name: <string-wrapper>Liu, Xiu</string-wrapper></indented-line>
     <indented-line>email: <string-wrapper><a href="mailto:i@xiu.buzz">i@xiu.buzz</a></string-wrapper></indented-line>
     <sub-obj name="links">
-      <indented-line v-for="link in links" :key="link.title"><indentation /><string-wrapper><a :href="link.link">{{ $t(link.title) }}</a></string-wrapper></indented-line>
+      <indented-line v-for="link in links" :key="link.title"><indentation /><string-wrapper><a :href="link.link" @click="onLinkClick(link)">{{ $t(link.title) }}</a></string-wrapper></indented-line>
     </sub-obj>
     <sub-obj name="identities" v-if="expanded">
       <indented-line v-for="identity in 9" :key="identity"><indentation /><string-wrapper>{{ $t('identities.' + identity) }}</string-wrapper></indented-line>
     </sub-obj>
     <indented-line v-else>identities: [ <a href="#" @click="expanded = true">...</a> ]</indented-line>
     };
+
+    <q-dialog v-model="showWeChat" seamless>
+      <q-card>
+        <q-card-section>
+          <div class="text-h6">{{ $t('wechat') }}</div>
+        </q-card-section>
+
+        <q-card-section class="q-pt-none">
+          <img src="assets/wechat.png" style="width: 100%; height: 100%" />
+        </q-card-section>
+
+        <q-card-actions align="right">
+          <q-btn flat label="OK" color="primary" v-close-popup />
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
   </div>
 </template>
 
@@ -26,7 +42,7 @@ const links = [
   { title: 'twitter', link: 'https://twitter.com/Liuxiu233' },
   { title: 'steam', link: 'https://steamcommunity.com/id/liuxiu233/' },
   { title: 'weibo', link: 'https://weibo.com/junhunz' },
-  { title: 'wechat', link: 'http://junhunz.cn/wechat.html' },
+  { title: 'wechat', link: '#' },
   { title: 'facebook', link: 'https://www.facebook.com/profile.php?id=100048228247720' },
   { title: 'linkedin', link: 'https://www.linkedin.com/in/liuxiu233' },
 ];
@@ -37,13 +53,22 @@ export default {
 
   setup() {
     return {
-      links
+      links,
     }
   },
 
   data() {
     return {
       expanded: false,
+      showWeChat: false
+    }
+  },
+
+  methods: {
+    onLinkClick(link) {
+      if (link.title === 'wechat') {
+        this.showWeChat = true;
+      }
     }
   }
 }

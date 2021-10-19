@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary text-white q-pt-lg">
+  <div class="bg-primary text-white q-pt-lg q-px-md">
     <div class="row justify-center">
       <div class="column items-center">
         <div class="text-weight-bold text-h1 bb q-pb-lg">
