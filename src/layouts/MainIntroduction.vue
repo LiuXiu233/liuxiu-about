@@ -1,7 +1,8 @@
 <template>
   <div class="mainBody">
     <span style="color: #eec08b">let</span> xiu = {<br>
-    <indented-line>name: <string-wrapper>Liu, Xiu</string-wrapper></indented-line>
+    <indented-line>name: <string-wrapper>刘秀</string-wrapper></indented-line>
+    <indented-line>id: <string-wrapper>6thSh0w</string-wrapper></indented-line>
     <indented-line>email: <string-wrapper><a href="mailto:i@xiu.buzz">i@xiu.buzz</a></string-wrapper></indented-line>
     <sub-obj name="links">
       <indented-line v-for="link in links" :key="link.title"><indentation /><string-wrapper><a :href="link.link" @click="onLinkClick(link)">{{ $t(link.title) }}</a></string-wrapper></indented-line>
