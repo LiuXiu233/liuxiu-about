@@ -1,5 +1,5 @@
 <template>
-  <indentation />{<br><slot /><indentation />},<br>
+  <indentation /><indentation />{<br><slot /><indentation /><indentation />},<br>
 </template>
 
 <script>
