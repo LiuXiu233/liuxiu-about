@@ -19,7 +19,7 @@
       </sub-actual-obj>
     </sub-obj>
     <indented-line v-else>identities: [ <a @click="expanded = true" class="langOpt">...</a> ]</indented-line>
-    };
+    };<span class="cursor"></span>
 
     <q-dialog v-model="showWeChat" seamless>
       <q-card>
@@ -60,7 +60,7 @@ const links = [
 
 export default {
   name: "MainIntroduction",
-  components: {SubActualObj, StringWrapper, Indentation, SubObj, IndentedLine },
+  components: { SubActualObj, StringWrapper, Indentation, SubObj, IndentedLine },
 
   setup() {
     return {
@@ -105,9 +105,25 @@ export default {
     font-size: 3.4vw;
   }
 }
-.mainBody :after {
-  /*content: "|";
+.cursor:after {
+  content: "|";
+  animation: blink 500ms linear infinite alternate;
   -webkit-animation: blink 500ms linear infinite alternate;
-  animation: blink 500ms linear infinite alternate;*/
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>
