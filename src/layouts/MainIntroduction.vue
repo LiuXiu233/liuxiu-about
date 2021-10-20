@@ -6,7 +6,7 @@
     <indented-line>email: <string-wrapper><a href="mailto:i@xiu.buzz">i@xiu.buzz</a></string-wrapper></indented-line>
     <indented-line>profession: <string-wrapper>{{ $t('profession') }}</string-wrapper></indented-line>
     <sub-obj name="links">
-      <indented-line v-for="link in links" :key="link.title"><indentation /><string-wrapper><a :href="link.link" @click="onLinkClick(link)">{{ $t(link.title) }}</a></string-wrapper></indented-line>
+      <indented-line v-for="link in links" :key="link.title"><indentation /><string-wrapper><a :href="link.link" @click="onLinkClick(link)" v-if="link.link">{{ $t(link.title) }}</a><a @click="onLinkClick(link)" v-else class="langOpt">{{ $t(link.title) }}</a></string-wrapper></indented-line>
     </sub-obj>
     <sub-obj name="contacts">
       <indented-line><indentation />QQ: <string-wrapper>1364109425</string-wrapper></indented-line>
@@ -18,7 +18,7 @@
         <indented-line><indentation />organization: <string-wrapper>{{ $t('identities.' + identity) }}</string-wrapper></indented-line>
       </sub-actual-obj>
     </sub-obj>
-    <indented-line v-else>identities: [ <a href="#" @click="expanded = true">...</a> ]</indented-line>
+    <indented-line v-else>identities: [ <a @click="expanded = true" class="langOpt">...</a> ]</indented-line>
     };
 
     <q-dialog v-model="showWeChat" seamless>
@@ -53,7 +53,7 @@ const links = [
   { title: 'twitter', link: 'https://twitter.com/Liuxiu233' },
   { title: 'steam', link: 'https://steamcommunity.com/id/liuxiu233/' },
   { title: 'weibo', link: 'https://weibo.com/junhunz' },
-  { title: 'wechat', link: '#' },
+  { title: 'wechat', link: '' },
   { title: 'facebook', link: 'https://www.facebook.com/profile.php?id=100048228247720' },
   { title: 'linkedin', link: 'https://www.linkedin.com/in/liuxiu233' },
 ];

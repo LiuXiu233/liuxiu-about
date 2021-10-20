@@ -50,8 +50,4 @@ export default {
 .bb {
   border-bottom: 2px solid #fff;
 }
-.langOpt {
-  text-decoration: underline;
-  cursor: pointer;
-}
 </style>
