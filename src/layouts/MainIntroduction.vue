@@ -13,10 +13,14 @@
       <indented-line><indentation />Mobile: <string-wrapper>+86 18998490182</string-wrapper></indented-line>
     </sub-obj>
     <sub-obj name="identities" v-if="expanded">
-      <sub-actual-obj v-for="identity in 9" :key="identity">
-        <indented-line><indentation /><indentation />title: <string-wrapper>{{ $t('titles.' + identity) }}</string-wrapper></indented-line>
-        <indented-line><indentation /><indentation />organization: <string-wrapper>{{ $t('identities.' + identity) }}</string-wrapper></indented-line>
-      </sub-actual-obj>
+      <transition appear enter-active-class="animated fadeIn slow">
+        <div>
+          <sub-actual-obj v-for="identity in 9" :key="identity">
+            <indented-line><indentation /><indentation />title: <string-wrapper>{{ $t('titles.' + identity) }}</string-wrapper></indented-line>
+            <indented-line><indentation /><indentation />organization: <string-wrapper>{{ $t('identities.' + identity) }}</string-wrapper></indented-line>
+          </sub-actual-obj>
+        </div>
+      </transition>
     </sub-obj>
     <indented-line v-else>identities: [ <a @click="expanded = true" class="langOpt">...</a> ]</indented-line>
     };<span class="cursor"></span>
