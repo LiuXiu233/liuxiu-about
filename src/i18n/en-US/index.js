@@ -1,5 +1,4 @@
 export default {
-  blog: 'Blog',
   github: 'GitHub',
   gitee: 'Gitee',
   twitter: 'Twitter',
