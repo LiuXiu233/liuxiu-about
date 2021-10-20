@@ -12,6 +12,7 @@ export default {
 
   copyright: 'Copyright © 2021 Liu Xiu',
   deployed: 'This page is deployed to ',
+  viewSource: 'View Source Code',
 
   titles: [
     'Senior Instructor', 'Managing Coach',

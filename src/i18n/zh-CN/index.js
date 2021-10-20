@@ -12,6 +12,7 @@ export default {
 
   copyright: '版权所有 © 2021 刘秀',
   deployed: '本主页运行在 ',
+  viewSource: '查看源代码',
 
   titles: [
     '高级讲师', '经理教练兼全职保姆', '电竞班战术导师', '电竞专业客座教授',
