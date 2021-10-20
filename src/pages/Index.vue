@@ -1,12 +1,12 @@
 <template>
   <div class="bg-primary text-white q-pt-lg q-px-md">
     <div class="row justify-center">
-      <div class="column items-center">
-        <div class="text-weight-bold text-h1 bb q-pb-lg">
+      <div class="column">
+        <div class="text-weight-bold text-h1 bb q-pb-lg text-center">
           刘秀
         </div>
 
-        <div class="text-h5 q-mt-lg">
+        <div class="q-mt-lg">
           <main-introduction />
         </div>
 

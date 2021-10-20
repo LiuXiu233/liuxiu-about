@@ -86,9 +86,28 @@ export default {
 </script>
 
 <style>
-/*.mainBody :after {
-  content: "|";
+.mainBody {
+  max-width: 1010px;
+  font-size: 2em;
+}
+@media screen and (min-width: 1010px) {
+  .mainBody {
+    width: 1010px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mainBody {
+    font-size: 4.7vw;
+  }
+}
+@media screen and (max-width: 850px) {
+  .mainBody {
+    font-size: 3.4vw;
+  }
+}
+.mainBody :after {
+  /*content: "|";
   -webkit-animation: blink 500ms linear infinite alternate;
-  animation: blink 500ms linear infinite alternate;
-}*/
+  animation: blink 500ms linear infinite alternate;*/
+}
 </style>
