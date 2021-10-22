@@ -15,7 +15,7 @@
             {{ $t('copyright') }}
           </div>
           <div>
-            {{ $t('deployed') }} <a href="https://github.com/" style="color: white !important;">GitHub</a>, <a href="https://github.com/etherein/liuxiu-about" target="_blank" style="color: white !important;">{{ $t('viewSource') }}</a>
+            {{ $t('deployed') }} <a href="https://github.com/" style="color: white !important;">GitHub</a>, <a href="https://github.com/LiuXiu233/liuxiu-about" target="_blank" style="color: white !important;">{{ $t('viewSource') }}</a>
           </div>
           <div class="inline text-subtitle2">
             <span class="langOpt" @click="changeLocale('en-US')">English</span> | <span class="langOpt" @click="changeLocale('zh-CN')">中文</span>
