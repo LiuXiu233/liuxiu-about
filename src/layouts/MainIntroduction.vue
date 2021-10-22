@@ -34,7 +34,7 @@
         </q-card-section>
 
         <q-card-section class="q-pt-none">
-          <img src="assets/wechat.png" style="width: 100%; height: 100%" />
+          <img src="assets/wechat.png" style="width: 100%; height: 100%;" />
         </q-card-section>
 
         <q-card-actions align="right">
