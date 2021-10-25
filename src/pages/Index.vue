@@ -18,7 +18,7 @@
             {{ $t('deployed') }} <a href="https://github.com/" style="color: white !important;">GitHub</a>, <a href="https://github.com/LiuXiu233/liuxiu-about" target="_blank" style="color: white !important;">{{ $t('viewSource') }}</a>
           </div>
           <div class="inline text-subtitle2">
-            <span class="langOpt" @click="changeLocale('en-US')">English</span> | <span class="langOpt" @click="changeLocale('zh-CN')">中文</span>
+            <a class="langOpt">English(xiu.buzz)</a> | <span class="langOpt" @click="toChinese">中文(刘秀.com)</span>
           </div>
         </div>
       </div>
@@ -43,6 +43,12 @@ export default {
       this.locale = locale;
       this.$q.localStorage.set('locale', locale);
     },
+    toEnglish(){
+      window.location.href = 'https://xiu.buzz'
+    },
+    toChinese(){
+      window.location.href = 'https://刘秀.com'
+    }
   }
 }
 </script>

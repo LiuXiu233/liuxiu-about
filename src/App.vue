@@ -16,9 +16,9 @@ export default defineComponent({
   },
   mounted() {
     if (this.$q.localStorage.has('locale')) {
-      this.locale = this.$q.localStorage.getItem('locale');
+      this.locale = 'en-US';
     } else {
-      this.locale = 'en-US'
+      this.locale = 'en-US';
     }
   }
 })
