@@ -12,6 +12,7 @@
     </sub-obj>
     <sub-obj name="contacts">
       <indented-line><indentation />QQ: <string-wrapper>1364109425</string-wrapper></indented-line>
+      <indented-line><indentation />Voice: <string-wrapper>+1 (657) 666-2924</string-wrapper></indented-line>
       <indented-line><indentation />Mobile: <string-wrapper>+86 18998490182</string-wrapper></indented-line>
     </sub-obj>
     <sub-obj name="identities" v-if="expanded">
