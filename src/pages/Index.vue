@@ -18,7 +18,7 @@
             {{ $t('deployed') }} <a href="https://github.com/" style="color: white !important;">GitHub</a>, <a href="https://github.com/LiuXiu233/liuxiu-about" target="_blank" style="color: white !important;">{{ $t('viewSource') }}</a>
           </div>
           <div class="inline text-subtitle2">
-            <a class="langOpt">English(xiu.buzz)</a> | <span class="langOpt" @click="toChinese">中文(刘秀.com)</span>
+            <a class="langOpt">English(liuxiu.io)</a> | <span class="langOpt" @click="toChinese">中文(刘秀.com)</span>
           </div>
         </div>
       </div>
