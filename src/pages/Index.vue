@@ -44,7 +44,7 @@ export default {
       this.$q.localStorage.set('locale', locale);
     },
     toEnglish(){
-      window.location.href = 'https://xiu.buzz'
+      window.location.href = 'https://liuxiu.io'
     },
     toChinese(){
       window.location.href = 'https://刘秀.com'
