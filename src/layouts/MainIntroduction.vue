@@ -6,9 +6,9 @@
     <indented-line>email: <string-wrapper><a href="mailto:xiu@srcmax.com">Xiu@srcmax.com</a></string-wrapper></indented-line>
     <indented-line>profession: <string-wrapper>{{ $t('profession') }}</string-wrapper></indented-line>
     <sub-obj name="blog">
-      <indented-line><indentation />general: <string-wrapper><a href="https://blog.liuxiu.in">https://blog.liuxiu.in</a></string-wrapper></indented-line>
-      <indented-line><indentation />e-sport: <string-wrapper><a href="https://esport.liuxiu.in">https://esport.liuxiu.in</a></string-wrapper></indented-line>
-      <indented-line><indentation />writing: <string-wrapper><a href="https://writing.liuxiu.in">https://writing.liuxiu.in</a></string-wrapper></indented-line>
+      <indented-line><indentation />general: <string-wrapper><a href="https://blog.liuxiu.us">https://blog.liuxiu.us</a></string-wrapper></indented-line>
+      <indented-line><indentation />e-sport: <string-wrapper><a href="https://esport.liuxiu.us">https://esport.liuxiu.us</a></string-wrapper></indented-line>
+      <indented-line><indentation />writing: <string-wrapper><a href="https://writing.liuxiu.us">https://writing.liuxiu.us</a></string-wrapper></indented-line>
     </sub-obj>
     <indented-line>studio:<string-wrapper><a href="https://srcmax.com">SrcMax Studio</a></string-wrapper></indented-line>
     <sub-obj name="links">
