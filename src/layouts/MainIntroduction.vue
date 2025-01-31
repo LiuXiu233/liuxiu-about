@@ -6,9 +6,9 @@
     <indented-line>email: <string-wrapper><a href="mailto:xiu@srcmax.com">Xiu@srcmax.com</a></string-wrapper></indented-line>
     <indented-line>profession: <string-wrapper>{{ $t('profession') }}</string-wrapper></indented-line>
     <sub-obj name="blog">
-      <indented-line><indentation />general: <string-wrapper><a href="https://blog.liuxiu.io">https://blog.liuxiu.io</a></string-wrapper></indented-line>
-      <indented-line><indentation />e-sport: <string-wrapper><a href="https://esport.liuxiu.io">https://esport.liuxiu.io</a></string-wrapper></indented-line>
-      <indented-line><indentation />writing: <string-wrapper><a href="https://writing.liuxiu.io">https://writing.liuxiu.io</a></string-wrapper></indented-line>
+      <indented-line><indentation />general: <string-wrapper><a href="https://blog.liuxiu.in">https://blog.liuxiu.in</a></string-wrapper></indented-line>
+      <indented-line><indentation />e-sport: <string-wrapper><a href="https://esport.liuxiu.in">https://esport.liuxiu.in</a></string-wrapper></indented-line>
+      <indented-line><indentation />writing: <string-wrapper><a href="https://writing.liuxiu.in">https://writing.liuxiu.in</a></string-wrapper></indented-line>
     </sub-obj>
     <indented-line>studio:<string-wrapper><a href="https://srcmax.com">SrcMax Studio</a></string-wrapper></indented-line>
     <sub-obj name="links">
@@ -16,8 +16,7 @@
     </sub-obj>
     <sub-obj name="contacts">
       <indented-line><indentation />QQ: <string-wrapper>1364109425</string-wrapper></indented-line>
-      <indented-line><indentation />Voice: <string-wrapper>+1 (657) 666-2924</string-wrapper></indented-line>
-      <indented-line><indentation />Mobile: <string-wrapper>+86 18998490182</string-wrapper></indented-line>
+      <indented-line><indentation />Mobile: <string-wrapper>+86 17689344886</string-wrapper></indented-line>
     </sub-obj>
     <sub-obj name="identities" v-if="expanded">
       <transition appear enter-active-class="animated fadeIn slow">
