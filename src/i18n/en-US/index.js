@@ -9,13 +9,14 @@ export default {
   linkedin: 'LinkedIn',
 
   profession: 'E-sport Practitioner',
+  game:'Marvel Rivals Pro Player',
 
   copyright: 'Copyright © 2021 Liu Xiu',
   deployed: 'This page is deployed to ',
   viewSource: 'View Source Code',
 
   titles: [
-    'null','Founder' ,
+    'null','Founder' ,'Marvel Rivals Coach',
     'IT Engineer', 'Head of Teaching and Project Manager for LOL: Wild Rift',
     'Senior Instructor', 'Managing Coach',
     'E-sport Tactical Instructor', 'Visiting Professor for E-sport Major',
@@ -24,7 +25,7 @@ export default {
   ],
 
   identities: [
-    'null','SrcMax Studio',
+    'null','SrcMax Studio','EOT E-sport Club',
     'Linkube Limited (GB)', 'Sichuan Southwest Duokui E-sport',
     'Guangzhou E-sport Profession Education Co., Ltd.', 'Pub E-sport Club',
     'Guangdong Institute of Economics and Trade', 'Guangzhou College of Technology and Business',

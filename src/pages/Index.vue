@@ -18,7 +18,7 @@
             {{ $t('deployed') }} <a href="https://vercel.com/" style="color: white !important;">Vercel</a>, <a href="https://github.com/LiuXiu233/liuxiu-about" target="_blank" style="color: white !important;">{{ $t('viewSource') }}</a>
           </div>
           <div class="inline text-subtitle2">
-            <a class="langOpt">English(liuxiu.io)</a> | <span class="langOpt" @click="toChinese">中文(Liuxiu233.com)</span>
+            <a class="langOpt">English(liuxiu.us)</a> | <span class="langOpt" @click="toChinese">中文(Liuxiu233.com)</span>
           </div>
         </div>
       </div>
@@ -44,7 +44,7 @@ export default {
       this.$q.localStorage.set('locale', locale);
     },
     toEnglish(){
-      window.location.href = 'https://liuxiu.io'
+      window.location.href = 'https://liuxiu.us'
     },
     toChinese(){
       window.location.href = 'https://Liuxiu233.com'
