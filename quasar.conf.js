@@ -32,18 +32,9 @@ module.exports = configure(function (ctx) {
     extras: [],
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
-  build: {
-    vueRouterMode: 'history', // 'hash' 或 'history'
-
-    chainWebpack(chain) {
-      chain.plugin('define').tap((args) => {
-        args[0]['process.env'] = JSON.stringify({
-          NODE_OPTIONS: '--openssl-legacy-provider'
-        });
-      return args;
-    });
-  },
-},
+    build: {
+      vueRouterMode: 'history', // 'hash' 或 'history'
+    },
 
       // transpile: false,
       // publicPath: '/',
