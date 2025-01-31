@@ -5,6 +5,7 @@
     <indented-line>id: <string-wrapper>6thSh0w</string-wrapper></indented-line>
     <indented-line>email: <string-wrapper><a href="mailto:xiu@srcmax.com">Xiu@srcmax.com</a></string-wrapper></indented-line>
     <indented-line>profession: <string-wrapper>{{ $t('profession') }}</string-wrapper></indented-line>
+    <indented-line>profession: <string-wrapper>{{ $t('game') }}</string-wrapper></indented-line>
     <sub-obj name="blog">
       <indented-line><indentation />general: <string-wrapper><a href="https://blog.liuxiu.us">https://blog.liuxiu.us</a></string-wrapper></indented-line>
       <indented-line><indentation />e-sport: <string-wrapper><a href="https://esport.liuxiu.us">https://esport.liuxiu.us</a></string-wrapper></indented-line>
